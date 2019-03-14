@@ -26,10 +26,13 @@ const articles = new TwitterArticles({
     });
   });
   
-  app.get('/categories', (req, res) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Headers', 'X-Requested-With');
-    res.send(articles.categories);
+  app.get('/datewise', (req, res) => {
+    articles.get({groupBy: 'date'}).then(function(data){
+      res.header('Access-Control-Allow-Origin', '*');
+      res.header('Access-Control-Allow-Headers', 'X-Requested-With');
+      res.header('Content-type', 'application/json');
+      res.send(data);
+    });
   });
   
   
