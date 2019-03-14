@@ -1,0 +1,27 @@
+{
+    "sources": [
+    {
+        "owner_screen_name": "ahm3d_ab",
+        "slug": "sre",
+        "rules": {
+            "default": "include all",
+            "custom": [
+            ]
+        }
+    },
+    {
+        "owner_screen_name": "ahm3d_ab",
+        "slug": "news-international",
+        "rules": {
+            "default": "include all",
+            "custom": [
+            ]
+        }
+    }
+    ],
+    "urls": [
+    ],
+    "categories": [
+    ],
+    "sort": "latest20"
+  }
