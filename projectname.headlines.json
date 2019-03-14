@@ -1,0 +1,125 @@
+{
+    "sources": [
+      {
+        "owner_screen_name": "Steven__Martin",
+        "slug": "continuously-mac",
+        "rules": {
+          "default": "include all",
+          "custom": [
+          ]
+        }
+      },
+      {
+        "owner_screen_name": "Steven__Martin",
+        "slug": "continuously-mac-support",
+        "rules": {
+          "default": "exclude all",
+          "custom": [
+            {
+              "action": "force include",
+              "where": "article",
+              "contains": "apple"
+            },
+            {
+              "action": "force include",
+              "where": "article",
+              "contains": "ios"
+            },
+            {
+              "action": "force include",
+              "where": "article",
+              "contains": "mac"
+            },
+            {
+              "action": "force include",
+              "where": "article",
+              "contains": "iphone"
+            },
+            {
+              "action": "force include",
+              "where": "article",
+              "contains": "watch"
+            },
+            {
+              "action": "force include",
+              "where": "source",
+              "contains": "@tim_cook"
+            }
+          ]
+        }
+      }
+    ],
+    "categories": [
+      {
+        "category": "iPhone",
+        "search_pattern": "iphone",
+        "badge": "iphone_badge"
+      },
+      {
+        "category": "iOS",
+        "search_pattern": "ios",
+        "badge": "iphone_badge"
+      },
+      {
+        "category": "iPad",
+        "search_pattern": "ipad",
+        "badge": "ipad_badge"
+      },
+      {
+        "category": "MacBook",
+        "search_pattern": "macbook",
+        "badge": "imac_badge"
+      },
+      {
+        "category": "Mac Mini",
+        "search_pattern": "mac mini",
+        "badge": "imac_badge"
+      },
+      {
+        "category": "macOS",
+        "search_pattern": "os *x",
+        "badge": "imac_badge"
+      },
+      {
+        "category": "macOS",
+        "search_pattern": "mac *os",
+        "badge": "imac_badge"
+      },
+      {
+        "category": "App Store",
+        "search_pattern": "app *store",
+        "badge": "appstore_badge"
+      },
+      {
+        "category": "Apple TV",
+        "search_pattern": "apple *tv",
+        "badge": "appletv_badge"
+      },
+      {
+        "category": "tvOS",
+        "search_pattern": "tvOS",
+        "badge": "appletv_badge"
+      },
+      {
+        "category": "Apple Music",
+        "search_pattern": "apple *music",
+        "badge": "applemusic_badge"
+      },
+      {
+        "category": "watchOS",
+        "search_pattern": "watchos",
+        "badge": "applewatch_badge"
+      },
+      {
+        "category": "Apple Watch",
+        "search_pattern": "apple *watch",
+        "badge": "applewatch_badge"
+      },
+      {
+        "category": "Siri",
+        "search_pattern": "siri",
+        "badge": "default_badge"
+      }
+    ],
+    "sort": "top20"
+  }
